@@ -1,5 +1,10 @@
 1.
 Testování pohybu hráèe v lobby módu.
+Chyby:
+Lze projít vlevo mimo mapu.
+Lze projít skrz budovu vpravo od vchodu do menzy.
+Invertovaná osa X (pravá a levá).
+Hráè se pohybuje rychleji doprava než doleva.
 
 2.
 Herní obchod (menza)
