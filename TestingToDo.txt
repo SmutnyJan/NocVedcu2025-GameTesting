@@ -1,0 +1,5 @@
+1.
+Testování pohybu hráèe v lobby módu.
+
+2.
+Herní obchod (menza)
