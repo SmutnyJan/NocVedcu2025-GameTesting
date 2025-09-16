@@ -4,6 +4,8 @@ using UnityEngine;
 public class SceneChanger : MonoBehaviour
 {
     public static SceneChanger Instance;
+    public Canvas IntroductionCanvas;
+
     private Dictionary<Scene, int> sceneIndexes = new Dictionary<Scene, int>()
     {
         { Scene.Lobby, 0 }
@@ -17,10 +19,20 @@ public class SceneChanger : MonoBehaviour
         Instance = this;
     }
 
+    public void Start()
+    {
+        IntroductionCanvas.enabled = true;
+    }
+
     public void ResetScene()
     {
         ChangeScene(GetCurrentScene());
-    }   
+    }
+    
+    public void CloseIntroductionCanvas()
+    {
+        IntroductionCanvas.enabled = false;
+    }
 
     public void ChangeScene(Scene scene)
     {
